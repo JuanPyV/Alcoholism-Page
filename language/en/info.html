@@ -30,16 +30,46 @@
 
     <!-- Custom styles for this template -->
     <link href="../../css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
 
 </head>
 
 <body id="page-top">
-<a href="https://icons8.com">Icon pack by Icons8</a>
+<a href="https://icons8.com"></a>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+
+<div class="toggle">
+    <i class="menu"><img src="https://img.icons8.com/material-rounded/40/cccccc/menu.png"></i>
+    <img src="../../images/beer_logo.png"  align="left">
+</div>
+
+<nav>
+    <div class="1">
+        <a href="../../index.html" class="navLinks">Vision</a>
+    </div>
+    <div class="2">
+        <a href="risk.html" class="navLinks">Risks</a>
+    </div>
+    <div class="3">
+        <a href="solution.html" class="navLinks">Solution</a>
+    </div>
+    <div class="logo"></div>
+    <div class="4">
+        <a href="proposal.html" class="navLinks">Proposal</a>
+    </div>
+    <div class="5">
+        <a href="video.html" class="navLinks">Video</a>
+    </div>
+    <div class="6">
+        <a href="alarm.html" class="navLinks">Alarm</a>
+    </div>
+</nav>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Information</a>
+        <a class="navbar-brand js-scroll-trigger activado" href="#page-top">Information</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -68,21 +98,7 @@
                     <a class="nav-link js-scroll-trigger" href="#"></a>
                 </li>
             </ul>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
-                        data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false"> Information
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <a class="dropdown-item" href="../../index.html">Vision</a>
-                    <a class="dropdown-item" href="risk.html">Risks</a>
-                    <a class="dropdown-item" href="solution.html">Solution</a>
-                    <a class="dropdown-item" href="proposal.html">Proposal</a>
-                    <a class="dropdown-item" href="team.html">Team</a>
-                    <a class="dropdown-item" href="ux.html">UX</a>
-                    <a class="dropdown-item" href="video.html">Video</a>
-                </div>
-            </div>
+
         </div>
 
     </div>
@@ -202,21 +218,23 @@
 <footer class="py-5 bg-dark">
     <style> a.ex3 {
         color: white;
+        font-size: 20px;
     }
-
     a.ex3:hover, a.ex3:active {
         color: gray;
     } </style>
     <div class="align-middle container">
         <div class="row">
             <div class="col col-lg-5">
-                <p class="m-0 text-left text-white">Copyright &copy; 2018</p>
+                <p class="m-0 text-left text-white" style="font-size: 20px">Copyright &copy; 2018</p>
                 <br>
                 <a href="ref.html" class="ex3">References</a>
+                <br>
+                <a href="team.html" class="ex3">Team</a>
             </div>
             <div class="col col-lg-5">
-                <p class="m-0 text-right text-white">🌐 Languages </p>
-                <li class="m-0 text-right"><a href="../es/index.html" class="ex3">Spanish</a></li>
+                <p class="m-0 text-right text-white" style="font-size: 20px">🌐 Languages </p>
+                <li class="m-0 text-right"><a href="../es/info.html" class="ex3">Spanish</a></li>
             </div>
         </div>
     </div>
@@ -232,6 +250,14 @@
 
 <!-- Custom JavaScript for this theme -->
 <script src="../../js/scrolling-nav.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu').click(function () {
+            $('nav').toggleClass('active');
+        })
+    })
+</script>
 
 </body>
 

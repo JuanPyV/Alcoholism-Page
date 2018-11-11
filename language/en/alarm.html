@@ -38,6 +38,7 @@
 <a href="https://icons8.com"></a>
 
 <!-- Navigation -->
+
 <div class="toggle">
     <i class="menu"><img src="https://img.icons8.com/material-rounded/40/cccccc/menu.png"></i>
     <img src="../../images/beer_logo.png"  align="left">
@@ -55,49 +56,42 @@
     </div>
     <div class="logo"></div>
     <div class="4">
-        <a href="proposal.html" class="navLinks">Proposal</a>
+        <a href="solution.html" class="navLinks">Solution</a>
     </div>
     <div class="5">
-        <a href="video.html" class="navLinks">Video</a>
+        <a href="proposal.html" class="navLinks">Proposal</a>
     </div>
     <div class="6">
-        <a href="alarm.html" class="navLinks">Alarm</a>
+        <a href="video.html" class="navLinks">Video</a>
     </div>
 </nav>
 
-<section id="risk" class="bg-light">
+
+
+<section>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center"><h1>Solutions</h1></div>
+        <div class="alarma">
+            <input  class="alarmInput" id="alarmTime" type="datetime-local">
+            <button class="setAlarm" id="alarmButton" onclick="setAlarm(this);">Set Alarm</button>
+            <p id="snoozeMsg" style="display: none">Alarm snooze for 5 minutes</p>
         </div>
-        <br><br><br>
-        <div class="row">
-            <div class="text-center col-lg-6">
+        <div class="alarma" id="alarmOptions" style="display: block;">
+            <button class="buttonAlarm" onclick="snooze();">Snooze 5 minutes</button>
+            <button class="buttonAlarm" onclick="stopAlarm();">Stop Alarm</button>
 
-                <h3 class="text-center"><img src="https://png.icons8.com/office/30/000000/idea.png"><br>
-                    “Salvia divinorum”</h3><br><br>
-                <p class="lead">One of the important and interesting solutions we found, as a way of helping with
-                    alcoholism, was the use of a species of plant called “Salvia divinorum”, used in a ritual that
-                    should help with cases of abuse and addiction of pretty much everything, so using it to cure this
-                    problem could work. They believe that the feminine entity that inhabits the plant heals the body,
-                    teaches the patient what causes and sustains the addiction, and guides the patient on the road to
-                    recovery and a balanced life.<br><br>
-            </div>
-            <div class="text-center col-lg-6">
-
-                <h3 class="text-center"><img src="https://png.icons8.com/color/40/000000/cash-in-hand.png"><br>
-                    "Enforce a minimum price for alcohol"</h3><br><br>
-                <p class="lead">One of the most known solutions that have been tried, was raising the price of alcohol
-                    so people would think twice before buying an expensive bottle of wine, tequila, or any variant of
-                    beverage that includes this substance. It has proven inefficient all the time it’s been tried because
-                    of how people that have fallen into addiction will not stop even for a higher price to buy what they
-                    think they need.
-                </p>
-
-            </div>
         </div>
+
     </div>
 </section>
+
+<section class="bg-light">
+    <div class="container">
+
+        <br><br>
+
+    </div>
+</section>
+
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
@@ -119,7 +113,7 @@
             </div>
             <div class="col col-lg-5">
                 <p class="m-0 text-right text-white" style="font-size: 20px">🌐 Languages </p>
-                <li class="m-0 text-right"><a href="../es/solution.html" class="ex3">Spanish</a></li>
+                <li class="m-0 text-right"><a href="../es/info.html" class="ex3">Spanish</a></li>
             </div>
         </div>
     </div>
@@ -135,6 +129,7 @@
 
 <!-- Custom JavaScript for this theme -->
 <script src="../../js/scrolling-nav.js"></script>
+<script src="../../js/alarmScript.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
