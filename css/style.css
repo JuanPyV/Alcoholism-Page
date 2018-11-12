@@ -16,10 +16,10 @@ nav {
     align-items: center;
     font-size: 28px;
     text-align: center;
-    border-top: 5px solid #277455;
-    border-bottom: 5px solid #277455;
-    border-left: 5px solid #277455;
-    background: #277455;
+    border-top: 5px solid #D4961C;
+    border-bottom: 5px solid #D4961C;
+    border-left: 5px solid #D4961C;
+    background: #D4961C;
     text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ nav {
 /* ---------------- */
 
 .header {
-    background-image: url(../images/obama.jpg);
+    background-image: url(../images/wall2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3%;
@@ -89,19 +89,29 @@ nav {
 }
 
 .title{
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: #fff3cd;
-    font-size: 150px;
-    text-shadow: 3px 3px #000000;
+    color: #E3AF48;
+    font-size: 140px;
+    text-shadow: 3px 3px #111111;
+}
+.frase{
+    padding-right: 300px;
+    font-family: 'Merienda One', cursive;
+    text-align: right;
+    color: #E3AF48;
+    font-size: 40px;
+    text-shadow: 3px 3px #111111;
+
 }
 
 #navbar {
     width: 100%;
-    background-color: #277455;
+    background-color: #D4961C;
     align-items: center;
     text-align: center;
-    border-top: 20px solid #277455;
-    border-bottom: 20px solid #277455;
+    border-top: 20px solid #D4961C;
+    border-bottom: 20px solid #D4961C;
 }
 
 #navbar a {
@@ -142,12 +152,12 @@ nav {
 .toggle{
     width: 100%;
     padding: 10px 20px;
-    background: #277455;
+    background: #D4961C;
     text-align: right;
     box-sizing: border-box;
     color: #ffffff;
     font-size: 30px;
-    border: 10px solid #277455;
+    border: 10px solid #D4961C;
     display: none;
 }
 
@@ -192,6 +202,23 @@ nav {
     padding: 20px;
 }
 
+/* -------Map--------- */
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+}
+
 /* ---------------- */
 
 @media screen and (max-width: 1000px) {
@@ -207,10 +234,7 @@ nav {
         grid-template-columns: 0;
         grid-auto-rows: 0;
         font-size: 16px;
-        border-top: 5px solid #277455;
-        border-bottom: 5px solid #277455;
         border-left: 0;
-        background: #277455;
         text-align: center;
         display: none;
     }
@@ -233,8 +257,6 @@ nav {
     }
     #navbar {
         width: 100%;
-        border-top: 10px solid #277455;
-        border-bottom: 10px solid #277455;
     }
     #navbar a {
         font-size: 16px;
