@@ -68,11 +68,15 @@
 
 
 
-<section>
+<section style="background-color: #D8D8D8">
     <div class="container">
         <div class="alarma">
             <input  class="alarmInput" id="alarmTime" type="datetime-local">
             <button class="setAlarm" id="alarmButton" onclick="setAlarm(this);">Set Alarm</button>
+            <br>
+            <p>Phone number:</p>
+            <br>
+            <input class="alarmInput" type="text" name="lastname"><br><br>
             <p id="snoozeMsg" style="display: none">Alarm snooze for 5 minutes</p>
         </div>
         <div class="alarma" id="alarmOptions" style="display: none;">
