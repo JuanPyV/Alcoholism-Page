@@ -172,24 +172,28 @@ nav {
 /* -------Alarma--------- */
 
 .alarmInput{
-    width: 60%;
+    width: 80%;
     padding: 12px 20px;
-    margin: 8px 10px    ;
+    margin: 8px 10px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
+.inputTexts{
+    float: left;
+    width: 60%;
+}
 .setAlarm{
-    width: 20%;
+    float: right;
+    width: 30%;
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 60px;
+    padding: 14px 40px;
+    margin: 80px 40px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-
 }
 
 .buttonAlarm {
@@ -197,7 +201,7 @@ nav {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 40px;
+    margin: 8px 100px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -207,6 +211,17 @@ nav {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    width: 100%;
+    height: 270px;
+}
+
+.textAlarm{
+    font-size: 90%;
+    margin-left: 10px;
+}
+.alarmMsg{
+    font-size: 90%;
+    margin-left: 10px;
 }
 
 /* -------Map--------- */
@@ -224,6 +239,18 @@ nav {
     height: 100%;
     width: 100%;
     position:absolute;
+}
+
+/* ---------------- */
+
+.translate{
+    height: 100%;
+    width: 20%;
+}
+
+.translateText{
+    color: #ffffff;
+    font-size: 70%;
 }
 
 /* ---------------- */
@@ -313,6 +340,9 @@ nav {
         box-sizing: border-box;
         font-size: 80%;
     }
+    .inputTexts{
+        width: 100%;
+    }
     .setAlarm{
         width: 80%;
         background-color: #4CAF50;
@@ -346,6 +376,23 @@ nav {
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 20px;
+    }
+
+    .textAlarm{
+        font-size: 80%;
+    }
+
+    .translate{
+        height: 60%;
+        width: 100%;
+    }
+
+    .translateText{
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        color: #ffffff;
+        font-size: 80%;
     }
 
 

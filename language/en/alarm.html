@@ -71,17 +71,21 @@
 <section style="background-color: #D8D8D8">
     <div class="container">
         <div class="alarma">
-            <input  class="alarmInput" id="alarmTime" type="datetime-local">
-            <button class="setAlarm" id="alarmButton" onclick="setAlarm(this);">Set Alarm</button>
-            <br>
-            <p>Phone number:</p>
-            <br>
-            <input class="alarmInput" type="text" name="lastname"><br><br>
-            <p id="snoozeMsg" style="display: none">Alarm snooze for 5 minutes</p>
+            <div class="inputTexts">
+                <input  class="alarmInput" id="alarmTime" type="datetime-local">
+                <p class="textAlarm">Phone number:</p>
+                <input class="alarmInput" type="text" name="lastname"><br><br>
+            </div>
+
+            <button class="setAlarm" id="alarmButton" onclick="setAlarm(this);">Start the alarm</button>
+            <br><br>
+
+
         </div>
         <div class="alarma" id="alarmOptions" style="display: none;">
-            <button class="buttonAlarm" onclick="snooze();">Snooze 5 minutes</button>
-            <button class="buttonAlarm" onclick="stopAlarm();">Stop Alarm</button>
+            <p class="alarmMsg" id="snoozeMsg" style="display: none">Alarm snooze for 5 minutes</p>
+            <button class="buttonAlarm" onclick="snooze();">Snooze for 5 minutes</button>
+            <button class="buttonAlarm" onclick="stopAlarm();">Stop the alarm</button>
         </div>
         <br><br>
         <div class="map-responsive">
@@ -104,16 +108,16 @@
     } </style>
     <div class="align-middle container">
         <div class="row">
-            <div class="col col-lg-5">
+            <div class="col col-lg-6">
                 <p class="m-0 text-left text-white" style="font-size: 20px">Copyright &copy; 2018</p>
                 <br>
                 <a href="ref.html" class="ex3">References</a>
                 <br>
                 <a href="team.html" class="ex3">Team</a>
             </div>
-            <div class="col col-lg-5">
-                <p class="m-0 text-right text-white" style="font-size: 20px">🌐 Languages </p>
-                <li class="m-0 text-right"><a href="../es/info.html" class="ex3">Spanish</a></li>
+            <div class="col col-lg-6">
+                <p class="translateText">Translate:</p>
+                <div class="translate" id="google_translate_element"></div>
             </div>
         </div>
     </div>
@@ -137,6 +141,16 @@
             $('nav').toggleClass('active');
         })
     })
+</script>
+
+<!---------->
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 </script>
 
 </body>
