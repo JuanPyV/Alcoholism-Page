@@ -1,5 +1,5 @@
 var alarmSound = new Audio();
-alarmSound.src = "/sound/alarm.mp3";
+alarmSound.src ="../../sound/alarm.mp3";
 var alarmTimer;
 
 function setAlarm(button) {
@@ -29,10 +29,12 @@ function cancelAlarm(button) {
     clearTimeout(alarmTimer);
     button.innerText = 'Set Alarm';
     button.setAttribute('onclick', 'setAlarm(this);')
+    alarmSound.pause();
 }
 
 function initAlarm() {
     alarmSound.play();
+    alarmSound.loop = true;
     document.getElementById('alarmOptions').style.display = '';
 }
 

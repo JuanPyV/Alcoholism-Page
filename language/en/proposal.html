@@ -116,12 +116,16 @@
     </div>
 </section>
 
+<!-- go up -->
+<a href="#" id="scroll" style="display: none;"><span></span></a>
+
 <!-- Footer -->
 <footer class="py-5 bg-dark">
     <style> a.ex3 {
         color: white;
         font-size: 20px;
     }
+
     a.ex3:hover, a.ex3:active {
         color: gray;
     } </style>
@@ -130,9 +134,11 @@
             <div class="col col-lg-5">
                 <p class="m-0 text-left text-white" style="font-size: 20px">Copyright &copy; 2018</p>
                 <br>
-                <a href="language/en/ref.html" class="ex3">References</a>
+                <a href="doc.html" class="ex3">Documentation</a>
                 <br>
-                <a href="language/en/team.html" class="ex3">Team</a>
+                <a href="ref.html" class="ex3">References</a>
+                <br>
+                <a href="team.html" class="ex3">Team</a>
             </div>
             <div class="col col-lg-5">
                 <p class="translateText">Translate:</p>
@@ -150,26 +156,22 @@
 <!-- Plugin JavaScript -->
 <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<!-- Custom JavaScript for this theme -->
-<script src="../../js/scrolling-nav.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.menu').click(function () {
-            $('nav').toggleClass('active');
-        })
-    })
-</script>
+<!-- back top button -->
+<script src="../../js/backTop.js"></script>
 
-<!---------->
+<!-----menu responsivo----->
+<script src="../../js/menuResponsivo.js"></script>
 
+<!-----Traductor----->
 <script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
     }
 </script>
+
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 </script>
+
 
 </body>
 
