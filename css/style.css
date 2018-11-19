@@ -284,98 +284,91 @@ nav {
     -ms-filter:"alpha(opacity=100)";
 }
 
-/* ------popover---------- */
+/* ------TextoInfo---------- */
 
-.text-centerInfo{
+.text-centerInfo {
     height: 900px;
     background-image: url("../images/beerWallInfo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 230px;
 }
-
-.btnP{
-    background-image: url("../images/buttonBeer.fw.png");
-    width: 150px;
-    height: 50px;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: normal;
-    text-align: center;
-    border-radius: 100px;
-}
-.btnP:hover{
-    background-image: url("../images/buttonBeer-hover.fw.png");
-    color: #fff;
-}
-
-.popoverBoxIzq{
+.textoDerBox{
     float: right;
     width: 40%;
 }
-
-.popoverBoxDer{
+.textoIzqBox{
     float: left;
     width: 40%;
-    margin-left: 250px;
 }
 
-.botonIzq{
-    margin-top: 300px;
-    margin-bottom: 200px;
-    margin-left: 350px;
+.textoDer1{
+    width: 80%;
+    margin-top: 90px;
+    text-align: center;
 }
-.botonIzq1{
-    margin-bottom: 20px;
-    margin-left: 350px;
-}
-
-.botonDer{
-    margin-top: 140px;
-    margin-bottom: 190px;
-    margin-right: 420px;
-}
-.botonDer1{
-    margin-top: 200px;
-    margin-bottom: 220px;
-    margin-right: 340px;
-}
-.botonDer2{
-    margin-top: 0;
-    margin-right: 340px;
-}
-
-.popover{
+.textoDer1 p{
+    font-size: 17px;
     text-align: justify;
-    position: absolute;
-    z-index: 1010;
-    display: none;
-    max-width: 500px;
-    padding: 1px;
-    white-space: normal;
-    background-color: #fff;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    background-clip: padding-box;
 }
-.popover-content{
-    font-size: 20px;
+.textoDer1 p.titulo{
+    font-size: 22px;
 }
-.popover-header {
-    padding-top: 5px;
+
+.textoDer2{
+    width: 80%;
+    margin-top: 80px;
+    text-align: center;
+    margin-left: 30px;
 }
-.popover-title {
-    padding: 5px 14px;
-    margin: 0;
-    font-size: 25px;
-    line-height: 18px;
-    background-color: #f7f7f7;
-    border-bottom: none;
-    border-radius: 5px 5px 0 0;
+.textoDer2 p{
+    font-size: 17px;
+    text-align: justify;
+}
+.textoDer2 p.titulo{
+    font-size: 22px;
+}
+
+.textoDer3{
+    width: 80%;
+    margin-top: 90px;
+    text-align: center;
+    margin-left: 30px;
+}
+.textoDer3 p{
+    font-size: 17px;
+    text-align: justify;
+}
+.textoDer3 p.titulo{
+    font-size: 22px;
+}
+
+.textoIzq1{
+    width: 80%;
+    margin-left: 130px;
+    margin-top: 130px;
+    text-align: center;
+}
+.textoIzq1 p{
+    font-size: 17px;
+    text-align: justify;
+}
+.textoIzq1 p.titulo{
+    font-size: 22px;
+}
+
+.textoIzq2{
+    width: 80%;
+    margin-left: 130px;
+    margin-top: 90px;
+    text-align: center;
+}
+.textoIzq2 p{
+    font-size: 17px;
+    text-align: justify;
+}
+.textoIzq2 p.titulo{
+    font-size: 22px;
 }
 
 /* ------InfoResponsivo---------- */
